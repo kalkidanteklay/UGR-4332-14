@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/stylebackground.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/responsive.css">
     <title>background</title>
 </head>
 <body>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="#background">BackGround</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="placesvisited.html">Places visited</a>
-        <a href="CV.html">CV</a>
-    </nav>
-    <h1 id="background">Background</h1> 
-    <p>My name is Kalkidan Tekelehaimanot. I was born in April 25, 2003. I am currently a Software 
+    <header class="header">
+        <h1 id="background">Background</h1> 
+    </header>
+    <div class="container">
+        <div id= "mySidebar" class="sidebar">
+            <aside class="sidemenu">
+                <nav>
+                    <ul>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#background">Background</a></li>
+                        <li> <a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="placesvisited.html">Places</a></li>
+                        <li> <a href="CV.html">CV</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <div id="main">
+            <i class="fas fa-chevron-right" id="button" onclick="openNav()"></i>
+            
+        </div>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+        
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+        
+    
+        <p>My name is Kalkidan Tekelehaimanot. I was born in April 25, 2003. I am currently a Software 
         Engineering student at AAiT. Although I may not have previous professional experience, I have actively engaged 
-    in various educational pursuits and personal projects that have equipped me with valuable abilities and a strong 
-foundation in my field. I am commmited to continuous learning and professional development. I regularly engage in 
- self-study and online courses to enhance my knowledge. </p>
+        in various educational pursuits and personal projects that have equipped me with valuable abilities and a strong 
+        foundation in my field. I am commmited to continuous learning and professional development. I regularly engage in 
+        self-study and online courses to enhance my knowledge. </p>
+        <footer class="footer">
+            <p>November, 2023</p>
+        </footer>
+    </div>
+    
+ </body>
+ </html>
