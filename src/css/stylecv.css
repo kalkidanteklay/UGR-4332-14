@@ -31,7 +31,7 @@ nav ul li a{
     
 }
 
-.imagecontainer{
+.container_imagecontainer{
     display: flex;
     justify-content: center;
     align-items: center;
