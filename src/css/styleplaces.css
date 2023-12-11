@@ -28,21 +28,21 @@ nav ul li a{
     background-color: lightpink;
     
 }
-.content{
+.container_content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.title{
+.container_content_title{
     align-self: flex-start;
 }
-.content2{
+.container_content_content2{
     display: flex;
     flex-direction: row;
     align-items:flex-start;
     margin-bottom: 10px;
 }
-.text{
+.container_content_content2_text{
     align-self: flex-start;
 }
 .footer{
