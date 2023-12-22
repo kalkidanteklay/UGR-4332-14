@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>background</title>
 </head>
 <body>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="#background">BackGround</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="placesvisited.html">Places visited</a>
-        <a href="CV.html">CV</a>
-    </nav>
-    <h1 id="background">Background</h1> 
-    <p>My name is Kalkidan Tekelehaimanot. I was born in April 25, 2003. I am currently a Software 
+    <header class="bg-[header image.jpg]" style="background-image: url('image/header.jpg');  height: 200px;">
+        <h1 class= "text-3xl font-bold" id="back">Background</h1>
+    </header>
+    <div id="main" class="text-3xl font-bold md:hidden">
+        <i class="fas fa-chevron-right" id= "button"></i>
+        
+    </div>
+        <div id="mySidebar" >
+            <nav class="flex items-center md:justify-end md:flex-row" style="background-image:url('image/sidemenu.webp');" >
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hidden md:flex" id="menu">
+                    
+                    <li><a class="text hover:bg-gray-400 font-bold" href="home.html">Home</a></li>
+                    <li><a class="text hover:bg-gray-400 font-bold " href="#back">Background</a></li>
+                    <li> <a class="text hover:bg-gray-400 font-bold" href="hobbies.html">Hobbies</a></li>
+                    <li><a class="text hover:bg-gray-400 font-bold" href="placesvisited.html">Places</a></li>
+                    <li> <a class="text mr-4 hover:bg-gray-400 font-bold" href="CV.html">CV</a></li>
+                </ul>
+            </nav>
+        </aside>
+        </div>
+        
+        <script src="js/tw.js"></script>
+        <p>My name is Kalkidan Tekelehaimanot. I was born in April 25, 2003. I am currently a Software 
         Engineering student at AAiT. Although I may not have previous professional experience, I have actively engaged 
-    in various educational pursuits and personal projects that have equipped me with valuable abilities and a strong 
-foundation in my field. I am commmited to continuous learning and professional development. I regularly engage in 
- self-study and online courses to enhance my knowledge. </p>
+        in various educational pursuits and personal projects that have equipped me with valuable abilities and a strong 
+        foundation in my field. I am commmited to continuous learning and professional development. I regularly engage in 
+        self-study and online courses to enhance my knowledge. </p>
+    
+    <footer>
+        <p>November, 2023</p>
+    </footer>
+ </body>
+ </html>
